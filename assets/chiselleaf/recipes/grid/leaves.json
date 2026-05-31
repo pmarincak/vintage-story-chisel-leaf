@@ -1,0 +1,43 @@
+[
+	{
+		"ingredientPattern": "PD",
+		"ingredients": {
+			"P": {
+			"type": "item",
+			"code": "game:plank-*",
+			"name": "wood",
+			"skipVariants": [ "agedacacia", "agedebony", "rottenebony", "aged", "veryaged" ]
+			},
+			"D": {
+			"type": "item",
+			"code": "game:plantdebris-leafy"
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"output": {
+			"type": "block",
+			"code": "chiselleaf:leaves-placed-{wood}"
+		}
+	},
+	{
+		"ingredientPattern": "PD",
+		"ingredients": {
+			"P": {
+			"type": "item",
+			"code": "game:treeseed-crimsonkingmaple"
+			},
+			"D": {
+			"type": "item",
+			"code": "game:plantdebris-leafy"
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"output": {
+			"type": "block",
+			"code": "chiselleaf:leaves-placed-crimsonkingmaple"
+		}
+	}
+]
+

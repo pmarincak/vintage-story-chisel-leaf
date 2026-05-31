@@ -17,8 +17,8 @@
 		{ code: "wood", states: ["crimsonkingmaple"], loadFromProperties: "block/wood" }
 	],
 	creativeinventory: { "general": ["leaves-placed-*"], "flora": ["leaves-placed-*"] },
-	shape: { base: "block/normal-lod0" },
-	shapeInventory: { base: "block/normal-lod0" },
+	shape: { base: "block/leaves" },
+	shapeInventory: { base: "block/leaves" },
 	renderpass: "OpaqueNoCull",
 	faceCullMode: "CollapseMaterial",
 	blockmaterial: "Leaves",
