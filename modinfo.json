@@ -1,10 +1,10 @@
 {
   "type": "content",
-  "modid": "examplecontentmod",
-  "name": "VS Wiki Example Content Mod",
+  "modid": "chiselleaf",
+  "name": "Chisel Leaf",
   "authors": [
-    "Nat @ Vintage Story Wiki"
+    "azurempress"
   ],
-  "description": "An example showcase of content mod additions.",
+  "description": "Adds craftable leaf blocks you can chisel.",
   "version": "1.0.0"
 }
