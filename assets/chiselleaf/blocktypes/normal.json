@@ -1,0 +1,93 @@
+{
+	code: "leaves",
+	class: "BlockLeaves",
+	behaviorsByType: {
+		"*-grown*-*": [{ name: "RainDrip" }],
+		"*": [{ name: "RainDrip" }]
+	},
+	attributes: {
+		"canChisel": true,
+		handbook: {
+			groupBy: ["leaves-*", "leavesnarrow-*"]
+		},
+		allowOverlays: false
+	},
+	variantgroups: [
+		{ code: "type", states: ["grown", "grown1", "grown2", "grown3", "grown4", "grown5", "grown6", "grown7", "placed"] },
+		{ code: "wood", states: ["crimsonkingmaple"], loadFromProperties: "block/wood" }
+	],
+	creativeinventory: { "general": ["leaves-placed-*"], "flora": ["leaves-placed-*"] },
+	shape: { base: "block/normal-lod0" },
+	shapeInventory: { base: "block/normal-lod0" },
+	renderpass: "OpaqueNoCull",
+	faceCullMode: "CollapseMaterial",
+	blockmaterial: "Leaves",
+	climateColorMapByType: {
+		"*-crimsonkingmaple": "climateCrimsonKingTint",
+		"*-redwood": "climateDarkerPlantTint",
+		"*": "climatePlantTint"
+	},
+	seasonColorMapByType: {
+		"*-pine": "seasonalNeedles",
+		"*-redwood": "seasonalNeedles",
+		"*-birch": "seasonalBirch",
+		"*-maple": "seasonalMaple",
+		"*-oak": "seasonalOak",
+		"*-walnut": "seasonalWalnut",
+		"*-larch": "seasonalLarch",
+		"*-crimsonkingmaple": "seasonalCrimsonKingMaple",
+		"*-kapok": "tropicalKapok",
+		"*": "seasonalFoliage",
+	},
+	vertexFlags: {
+		zOffset: 4,
+		windMode: "Leaves"
+	},
+	textures: {
+		smallleavesByType: {
+			"*-larch": { base: "game:block/plant/leaves/small/pine*" },
+			"*-redwood": { base: "game:block/plant/leaves/small/pine*" },
+			"*-crimsonkingmaple": { base: "game:block/plant/leaves/small/maple*" },
+			"*": { base: "game:block/plant/leaves/small/{wood}*" },
+		}
+	},
+	sideopaque: {
+		all: false
+	},
+	sidesolid: {
+		all: false
+	},
+	sideao: {
+		all: true
+	},
+	emitSideAo: {
+		all: false
+	},
+	snowCoverage: true,
+	replaceable: 4000,
+	lightAbsorption: 1,
+	resistance: 0.5,
+	collisionbox: null,
+	sounds: {
+		break: "game:block/plant",
+		place: "game:block/plant",
+		hit: "game:block/plant",
+		walk: "game:walk/grass",
+		inside: "game:walk/inside/leafy/bushrustle*"
+	},
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 10,
+	},
+	materialDensity: 300,
+	heldTpIdleAnimation: "holdbothhandslarge", heldRightReadyAnimation: "heldblockready", heldTpUseAnimation: "twohandplaceblock",
+	tpHandTransform: {
+		translation: { x: -1.23, y: -0.91, z: -0.8 },
+		rotation: { x: -2, y: 25, z: -78 },
+		scale: 0.4
+	},
+	guiTransform: {
+		scale: 0.8
+	},
+	frostable: true,
+}
