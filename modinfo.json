@@ -2,9 +2,11 @@
   "type": "content",
   "modid": "chiselleaf",
   "name": "Chisel Leaf",
-  "authors": [
-    "azurempress"
-  ],
+  "authors": ["azurempress"],
   "description": "Adds craftable leaf blocks you can chisel.",
-  "version": "1.0.0"
+  "version": "1.0.0",
+    "dependencies": {
+      "game": "1.22.0"
+  },
+  "website": "https://github.com/pmarincak/vintage-story-chisel-leaf"
 }
