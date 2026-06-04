@@ -38,6 +38,38 @@
 			"type": "block",
 			"code": "chiselleaf:leaves-placed-crimsonkingmaple"
 		}
+	},
+	{
+		"ingredientPattern": "L",
+		"ingredients": {
+			"L": {
+			"type": "block",
+			"code": "chiselleaf:leaves-placed-*",
+			"name": "type"
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"output": {
+			"type": "block",
+			"code": "chiselleaf:leaves-static-{type}"
+		}
+	},
+	{
+		"ingredientPattern": "L",
+		"ingredients": {
+			"L": {
+			"type": "block",
+			"code": "chiselleaf:leaves-static-*",
+			"name": "type"
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"output": {
+			"type": "block",
+			"code": "chiselleaf:leaves-placed-{type}"
+		}
 	}
 ]
 

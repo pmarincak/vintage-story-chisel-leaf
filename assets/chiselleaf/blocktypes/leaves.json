@@ -13,10 +13,10 @@
 		allowOverlays: false
 	},
 	variantgroups: [
-		{ code: "type", states: ["grown", "grown1", "grown2", "grown3", "grown4", "grown5", "grown6", "grown7", "placed"] },
+		{ code: "type", states: ["placed", "static"] },
 		{ code: "wood", states: ["crimsonkingmaple"], loadFromProperties: "block/wood" }
 	],
-	creativeinventory: { "general": ["leaves-placed-*"], "flora": ["leaves-placed-*"] },
+	creativeinventory: { "general": ["leaves-placed-*", "leaves-static-*"], "flora": ["leaves-placed-*", "leaves-static-*"] },
 	shape: { base: "block/leaves" },
 	shapeInventory: { base: "block/leaves" },
 	renderpass: "OpaqueNoCull",
@@ -28,6 +28,7 @@
 		"*": "climatePlantTint"
 	},
 	seasonColorMapByType: {
+		"*-static-*": null,
 		"*-pine": "seasonalNeedles",
 		"*-redwood": "seasonalNeedles",
 		"*-birch": "seasonalBirch",
@@ -37,11 +38,14 @@
 		"*-larch": "seasonalLarch",
 		"*-crimsonkingmaple": "seasonalCrimsonKingMaple",
 		"*-kapok": "tropicalKapok",
-		"*": "seasonalFoliage",
+		"*": "seasonalFoliage"
 	},
 	vertexFlags: {
 		zOffset: 4,
-		windMode: "Leaves"
+		windModeByType:{
+			"*-placed-*" : "Leaves",
+			"*-static-*" : "NoWind"
+		} 
 	},
 	textures: {
 		smallleavesByType: {
