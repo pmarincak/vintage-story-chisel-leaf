@@ -1,0 +1,90 @@
+{
+	code: "fruittree",
+	class: "BlockLeaves",
+	behaviorsByType: {
+		"*": [{ name: "RainDrip" }]
+	},
+	attributes: {
+		"canChisel": true,
+		handbook: {
+			groupBy: ["fruittree-*"]
+		},
+		allowOverlays: false
+	},
+	variantgroups: [
+		{ code: "subtype", states: ["blossom", "plain"] },
+		{ code: "type", states: ["placed", "static"] },
+		{ code: "wood", states: ["breadfruit", "cherry", "lychee", "mango", "olive", "orange", "peach", "pear", "pinkapple", "pomegranate", "redapple", "yellowapple" ] },
+	],
+	creativeinventory: { "general": ["fruittree-*"], "flora": ["fruittree-*"] },
+	shape: { base: "block/leaves" },
+	shapeInventory: { base: "block/leaves" },
+	renderpass: "OpaqueNoCull",
+	faceCullMode: "CollapseMaterial",
+	blockmaterial: "Leaves",
+	climateColorMapByType: {
+		"*-orange": "climateDarkerPlantTint",
+		"*-olive": "climateLighterPlantTint",
+		"*-blossom-*" : null,
+		"*": "climatePlantTint"
+	},
+	seasonColorMapByType: {
+		"*-static-*": null,
+		"*-breadfruit": "tropicalKapok",
+		"*-olive": "seasonalOlive",
+		"*": "seasonalFoliage"
+	},
+	vertexFlags: {
+		zOffset: 4,
+		windModeByType:{
+			"*-placed-*" : "Leaves",
+			"*-static-*" : "NoWind"
+		} 
+	},
+	textures: {
+		smallleavesByType: {
+			"*-blossom-*-breadfruit": { base: "game:block/plant/fruittree/breadfruit/largeblossom" },
+			"*-blossom-*": { base: "game:block/plant/fruittree/{wood}/blossom" },
+			"*-plain-*": { base: "game:block/plant/fruittree/{wood}/leaves" }
+		}
+	},
+	sideopaque: {
+		all: false
+	},
+	sidesolid: {
+		all: false
+	},
+	sideao: {
+		all: true
+	},
+	emitSideAo: {
+		all: false
+	},
+	snowCoverage: true,
+	replaceable: 4000,
+	lightAbsorption: 1,
+	resistance: 0.5,
+	collisionbox: null,
+	sounds: {
+		break: "game:block/plant",
+		place: "game:block/plant",
+		hit: "game:block/plant",
+		walk: "game:walk/grass",
+		inside: "game:walk/inside/leafy/bushrustle*"
+	},
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 10,
+	},
+	materialDensity: 300,
+	heldTpIdleAnimation: "holdbothhandslarge", heldRightReadyAnimation: "heldblockready", heldTpUseAnimation: "twohandplaceblock",
+	tpHandTransform: {
+		translation: { x: -1.23, y: -0.91, z: -0.8 },
+		rotation: { x: -2, y: 25, z: -78 },
+		scale: 0.4
+	},
+	guiTransform: {
+		scale: 0.8
+	},
+	frostable: true,
+}
