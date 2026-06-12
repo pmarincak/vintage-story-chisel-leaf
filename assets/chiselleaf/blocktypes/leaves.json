@@ -2,7 +2,6 @@
 	code: "leaves",
 	class: "BlockLeaves",
 	behaviorsByType: {
-		"*-grown*-*": [{ name: "RainDrip" }],
 		"*": [{ name: "RainDrip" }]
 	},
 	attributes: {
