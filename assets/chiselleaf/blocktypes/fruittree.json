@@ -12,7 +12,6 @@
 		allowOverlays: false
 	},
 	variantgroups: [
-		{ code: "subtype", states: ["blossom", "plain"] },
 		{ code: "type", states: ["placed", "static"] },
 		{ code: "wood", states: ["breadfruit", "cherry", "lychee", "mango", "olive", "orange", "peach", "pear", "pinkapple", "pomegranate", "redapple", "yellowapple" ] },
 	],
@@ -23,10 +22,7 @@
 	faceCullMode: "CollapseMaterial",
 	blockmaterial: "Leaves",
 	climateColorMapByType: {
-		"*-orange": "climateDarkerPlantTint",
-		"*-olive": "climateLighterPlantTint",
-		"*-blossom-*" : null,
-		"*": "climatePlantTint"
+		"*": null
 	},
 	seasonColorMapByType: {
 		"*-static-*": null,
@@ -43,9 +39,8 @@
 	},
 	textures: {
 		smallleavesByType: {
-			"*-blossom-*-breadfruit": { base: "game:block/plant/fruittree/breadfruit/largeblossom" },
-			"*-blossom-*": { base: "game:block/plant/fruittree/{wood}/blossom" },
-			"*-plain-*": { base: "game:block/plant/fruittree/{wood}/leaves" }
+			"*-breadfruit": { base: "game:block/plant/fruittree/breadfruit/largeblossom" },
+			"*": { base: "game:block/plant/fruittree/{wood}/blossom" }
 		}
 	},
 	sideopaque: {
