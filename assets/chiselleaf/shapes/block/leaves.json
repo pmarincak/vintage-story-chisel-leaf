@@ -2,7 +2,7 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textures": {
-		"smallleaves": "block/plant/leaves/small/oak1"
+		"smallleaves": "game:block/plant/leaves/small/oak1"
 	},
 	"elements": [
 		{
