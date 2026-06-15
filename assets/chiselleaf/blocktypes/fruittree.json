@@ -12,7 +12,7 @@
 		allowOverlays: false
 	},
 	variantgroups: [
-		{ code: "type", states: ["placed", "static"] },
+		{ code: "type", states: ["placed", "static", "eternal"] },
 		{ code: "wood", states: ["breadfruit", "cherry", "lychee", "mango", "olive", "orange", "peach", "pear", "pinkapple", "pomegranate", "redapple", "yellowapple" ] },
 	],
 	creativeinventory: { "general": ["fruittree-*"], "flora": ["fruittree-*"] },
@@ -26,6 +26,7 @@
 	},
 	seasonColorMapByType: {
 		"*-static-*": null,
+		"*-eternal-*": null,
 		"*-breadfruit": "tropicalKapok",
 		"*-olive": "seasonalOlive",
 		"*": "seasonalFoliage"
@@ -34,6 +35,7 @@
 		zOffset: 4,
 		windModeByType:{
 			"*-placed-*" : "Leaves",
+			"*-eternal-*" : "Leaves",
 			"*-static-*" : "NoWind"
 		} 
 	},

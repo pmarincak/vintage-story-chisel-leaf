@@ -49,6 +49,22 @@
 		"height": 1,
 		"output": {
 			"type": "block",
+			"code": "chiselleaf:fruittree-eternal-{type}"
+		}
+	} ,
+	{
+		"ingredientPattern": "L",
+		"ingredients": {
+			"L": {
+			"type": "block",
+			"code": "chiselleaf:fruittree-eternal-*",
+			"name": "type"
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"output": {
+			"type": "block",
 			"code": "chiselleaf:fruittree-placed-{type}"
 		}
 	}    
