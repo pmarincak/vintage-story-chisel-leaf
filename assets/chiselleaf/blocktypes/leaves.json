@@ -18,8 +18,8 @@
 	creativeinventory: { "general": ["leaves-placed-*", "leaves-static-*"], "flora": ["leaves-placed-*", "leaves-static-*"] },
 	shape: { base: "block/leaves" },
 	shapeInventory: { base: "block/leaves" },
-	renderpass: "OpaqueNoCull",
-	faceCullMode: "CollapseMaterial",
+	renderpass: "BlendNoCull",
+	faceCullMode: "NeverCull",
 	blockmaterial: "Leaves",
 	climateColorMapByType: {
 		"*-crimsonkingmaple": "climateCrimsonKingTint",

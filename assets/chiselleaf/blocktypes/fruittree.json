@@ -18,8 +18,8 @@
 	creativeinventory: { "general": ["fruittree-*"], "flora": ["fruittree-*"] },
 	shape: { base: "block/leaves" },
 	shapeInventory: { base: "block/leaves" },
-	renderpass: "OpaqueNoCull",
-	faceCullMode: "CollapseMaterial",
+	renderpass: "BlendNoCull",
+	faceCullMode: "NeverCull",
 	blockmaterial: "Leaves",
 	climateColorMapByType: {
 		"*": null
