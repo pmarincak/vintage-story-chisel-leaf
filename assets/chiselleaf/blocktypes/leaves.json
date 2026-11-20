@@ -16,7 +16,7 @@
 		{ code: "wood", states: ["crimsonkingmaple"], loadFromProperties: "block/wood" }
 	],
 	creativeinventory: { "general": ["leaves-placed-*", "leaves-static-*"], "flora": ["leaves-placed-*", "leaves-static-*"] },
-	shape: { base: "block/leaves" },
+	shape: { "base": "block/leaves" },
 	shapeInventory: { base: "block/leaves" },
 	renderpass: "BlendNoCull",
 	faceCullMode: "NeverCull",
@@ -51,6 +51,7 @@
 			"*-larch": { base: "game:block/plant/leaves/small/pine*" },
 			"*-redwood": { base: "game:block/plant/leaves/small/pine*" },
 			"*-crimsonkingmaple": { base: "game:block/plant/leaves/small/maple*" },
+			"*-willow": { "base": "block/willow_full1" },
 			"*": { base: "game:block/plant/leaves/small/{wood}*" },
 		}
 	},
@@ -91,6 +92,10 @@
 	},
 	guiTransform: {
 		scale: 0.8
+	},
+	heldSounds: {
+		"invpickup": {path: "game:held/ui-inventory/plant/ui-plant*", pitch: {avg: 1.0, var: 0.25 }, volume: { avg: 1.0, var: 0.0 } },
+		"invplace": {path: "game:held/ui-inventory/plant/ui-plant*", pitch: {avg: 1.0, var: 0.25 }, volume: { avg: 1.0, var: 0.0 } },
 	},
 	frostable: true,
 }

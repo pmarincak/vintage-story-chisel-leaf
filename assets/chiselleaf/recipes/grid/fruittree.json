@@ -6,7 +6,7 @@
 			"type": "item",
 			"code": "game:fruit-*",
 			"name": "wood",
-            "skipVariants": [ "blueberry", "cranberry", "redcurrant", "whitecurrant", "blackcurrant", "saguaro", "pineapple", "beautyberry", "blackberry", "cloudberry", "raspberry", "strawberry"]
+            "skipVariants": [ "blueberry", "cranberry", "redcurrant", "whitecurrant", "blackcurrant", "saguaro", "pineapple", "beautyberry", "blackberry", "cloudberry", "raspberry", "strawberry", "gooseberry", "guava", "kumquat", "natalplum"]
 			},
 			"D": {
 			"type": "item",
